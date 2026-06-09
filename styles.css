@@ -428,14 +428,60 @@ tbody tr:hover {
 @media (max-width: 720px) {
   .page-shell {
     width: min(100% - 20px, 1180px);
-    padding-top: 12px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 16px;
   }
 
   .welcome-banner,
   .hero,
   .panel {
-    padding: 16px;
+    padding: 14px;
+  }
+
+  .welcome-banner {
+    margin-bottom: 8px;
+  }
+
+  .welcome-banner p {
+    font-size: 0.92rem;
+    line-height: 1.1;
+  }
+
+  .welcome-banner .deadline {
+    margin-top: 6px;
+    font-size: 0.72rem;
+    line-height: 1.35;
+  }
+
+  .hero {
+    gap: 14px;
+  }
+
+  .hero-copy {
+    gap: 8px;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+    line-height: 0.95;
+  }
+
+  h2 {
+    font-size: 1.55rem;
+  }
+
+  .intro {
+    font-size: 0.9rem;
+  }
+
+  .league-link {
+    width: 100%;
+    min-height: 42px;
+  }
+
+  .hero-art {
+    max-width: 220px;
+    margin: 0 auto;
   }
 
   .hero-stats,
@@ -444,8 +490,90 @@ tbody tr:hover {
     grid-template-columns: 1fr;
   }
 
+  .hero-stats article,
+  .summary-card,
+  .prize-card {
+    min-height: 68px;
+  }
+
+  main {
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .section-heading {
+    margin-bottom: 10px;
+  }
+
+  .table-wrap {
+    overflow: visible;
+    border: 0;
+  }
+
+  table {
+    min-width: 0;
+    background: transparent;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody {
+    display: grid;
+    gap: 10px;
+  }
+
+  tbody tr {
+    display: grid;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(2, 10, 20, 0.5);
+  }
+
+  tbody tr:nth-child(even),
+  tbody tr:hover {
+    background: rgba(2, 10, 20, 0.5);
+  }
+
   th,
   td {
-    padding: 10px;
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  td {
+    display: grid;
+    gap: 2px;
+  }
+
+  td::before {
+    color: var(--gold-bright);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  td:nth-child(1)::before {
+    content: "Deltager";
+  }
+
+  td:nth-child(2)::before {
+    content: "Holdnavn";
+  }
+
+  td:nth-child(3)::before {
+    content: "Betalt";
+  }
+
+  td:nth-child(4)::before {
+    content: "Tilmeldt";
+  }
+
+  .badge {
+    width: fit-content;
   }
 }
