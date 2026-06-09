@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spillet Om Det Hele</title>
+    <meta
+      name="description"
+      content="Leagueoversigt for Spillet Om Det Hele med deltagerstatus, præmiepulje og betalingsoversigt."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">FIFA World Cup 2026 Fantasy League</p>
+          <h1>Spillet Om Det Hele</h1>
+          <p class="intro">
+            Overblik over præmiepuljen, deltagerfeltet og hvem der er klar til
+            at gå hele vejen.
+          </p>
+          <div class="hero-stats" aria-label="Ligaoversigt">
+            <article>
+              <span class="stat-value">14</span>
+              <span class="stat-label">Deltagere</span>
+            </article>
+            <article>
+              <span class="stat-value">kr 4.200</span>
+              <span class="stat-label">Præmiepulje</span>
+            </article>
+            <article>
+              <span class="stat-value">10 / 14</span>
+              <span class="stat-label">Betalt</span>
+            </article>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img
+            src="assets/league-artwork.jpg"
+            alt="Spillet Om Det Hele turneringsgrafik"
+          />
+        </div>
+      </header>
+
+      <main>
+        <section class="panel summary-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Status pr. 9. juni 2026</p>
+            <h2>Ligaens status</h2>
+          </div>
+
+          <div class="summary-grid">
+            <article class="summary-card paid">
+              <span class="summary-number">10</span>
+              <span class="summary-title">Har betalt</span>
+            </article>
+            <article class="summary-card unpaid">
+              <span class="summary-number">3</span>
+              <span class="summary-title">Mangler betaling</span>
+            </article>
+            <article class="summary-card unknown">
+              <span class="summary-number">1</span>
+              <span class="summary-title">Betaling ukendt</span>
+            </article>
+            <article class="summary-card signed">
+              <span class="summary-number">14</span>
+              <span class="summary-title">Tilmeldt ligaen</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel prize-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Præmiefordeling</p>
+            <h2>Der er faktisk noget på spil</h2>
+          </div>
+
+          <div class="prize-grid">
+            <article class="prize-card first">
+              <span class="place">1. plads</span>
+              <strong>kr 2.940</strong>
+            </article>
+            <article class="prize-card second">
+              <span class="place">2. plads</span>
+              <strong>kr 840</strong>
+            </article>
+            <article class="prize-card third">
+              <span class="place">3. plads</span>
+              <strong>kr 420</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel table-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Deltageroversigt</p>
+            <h2>Hvem er med i kapløbet?</h2>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Deltager</th>
+                  <th>Holdnavn</th>
+                  <th>Betalt</th>
+                  <th>Tilmeldt</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Milad Avaz</td>
+                  <td>Vennern Fra Gennern</td>
+                  <td><span class="badge yes">Ja</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+                <tr>
+                  <td>Peter Schlie</td>
+                  <td>Pete Pete Pete</td>
+                  <td><span class="badge yes">Ja</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+                <tr>
+                  <td>Allan Funch</td>
+                  <td>Funchens Trup</td>
+                  <td><span class="badge yes">Ja</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+                <tr>
+                  <td>Johan Wang</td>
+                  <td>Viva Cesar Sampaio</td>
+                  <td><span class="badge yes">Ja</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+                <tr>
+                  <td>Magnus Bruun</td>
+                  <td>Ræverødderne</td>
+                  <td><span class="badge no">Nej</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+                <tr>
+                  <td>Jesper Fries</td>
+                  <td>Friesos Favoritter</td>
+                  <td><span class="badge no">Nej</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+                <tr>
+                  <td>Babak Vakili</td>
+                  <td>Persian Lego</td>
+                  <td><span class="badge yes">Ja</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+                <tr>
+                  <td>Jacob Talleruphuus</td>
+                  <td>FC YNWA</td>
+                  <td><span class="badge yes">Ja</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+                <tr>
+                  <td>Tobias Sørensen</td>
+                  <td>Slotsbyens drenge</td>
+                  <td><span class="badge yes">Ja</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+                <tr>
+                  <td>Garnet (Hvem er dette)</td>
+                  <td>Fartgale Kindheste</td>
+                  <td><span class="badge maybe">Ved ikke</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+                <tr>
+                  <td>Jonas Østerbye</td>
+                  <td>dänische dominanz</td>
+                  <td><span class="badge no">Nej</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+                <tr>
+                  <td>Mads Rosenkrantz Grage</td>
+                  <td>Sellouts</td>
+                  <td><span class="badge yes">Ja</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+                <tr>
+                  <td>Jonas Sørensen</td>
+                  <td>Au11</td>
+                  <td><span class="badge yes">Ja</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+                <tr>
+                  <td>Misam Avaz</td>
+                  <td>FC 85</td>
+                  <td><span class="badge yes">Ja</span></td>
+                  <td><span class="badge yes">Ja</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
